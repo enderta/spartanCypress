@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-05-21T13:23:55.526Z",
+    "end": "2022-05-21T13:25:16.858Z",
+    "duration": 81332,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d48b2215-047e-4a8f-91ce-9161f7c05a76",
+      "title": "",
+      "fullFile": "cypress/integration/bookit.feature",
+      "file": "cypress/integration/bookit.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7da3a363-7a12-4dbb-bd8e-9d6ec27493f6",
+          "title": "Bookit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "three point verification (UI,DATABASE,API) (example #1)",
+              "fullTitle": "Bookit three point verification (UI,DATABASE,API) (example #1)",
+              "timedOut": null,
+              "duration": 6478,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out after waiting `6000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `6000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `6000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `6000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:162418:74)\n    at https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:163637:16\n    at tryCatcher (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:13022:23)\n    at https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:8144:41\n    at tryCatcher (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:13022:23)\n    at Promise._settlePromiseFromHandler (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:10957:31)\n    at Promise._settlePromise (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:11014:18)\n    at Promise._settlePromise0 (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:11059:10)\n    at Promise._settlePromises (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:11135:18)\n    at _drainQueueStep (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:7729:12)\n    at _drainQueue (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:7722:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:7738:5)\n    at Async.drainQueues (https://cybertek-reservation-qa3.herokuapp.com/__cypress/runner/cypress_runner.js:7608:14)\nFrom Your Spec Code:\n    at Bookit.eval [as login] (https://cybertek-reservation-qa3.herokuapp.com/__cypress/tests?p=cypress\\integration\\bookit.feature:29:8)\n    at Context.eval (https://cybertek-reservation-qa3.herokuapp.com/__cypress/tests?p=cypress\\integration\\bookit.feature:93:10)\n    at Context.resolveAndRunStepDefinition (https://cybertek-reservation-qa3.herokuapp.com/__cypress/tests?p=cypress\\integration\\bookit.feature:10726:29)\n    at Context.eval (https://cybertek-reservation-qa3.herokuapp.com/__cypress/tests?p=cypress\\integration\\bookit.feature:10047:35)",
+                "diff": null
+              },
+              "uuid": "41aaee29-203e-4416-bddd-2e36b442e122",
+              "parentUUID": "7da3a363-7a12-4dbb-bd8e-9d6ec27493f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "41aaee29-203e-4416-bddd-2e36b442e122"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6478,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
